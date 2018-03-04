@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/action_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_container"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ll.commonpicker.PickerRecyclerView
+            android:id="@+id/container_rv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+        <ll.commonpicker.PickerRecyclerView
+            android:id="@+id/container_rv2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
